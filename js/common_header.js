@@ -50,7 +50,7 @@ $(document).ready(function () {
     searchBtn.click(function (e) {
         e.preventDefault();
         searchtab.animate({
-            top: 80 + 'px'
+            top: 60 + 'px'
         }, 500)
         searchMask.stop().fadeIn(500)
 
