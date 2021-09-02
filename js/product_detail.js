@@ -45,10 +45,11 @@ $(document).ready(function () {
 
     
 
-    var btnA = $("body a");
+    /*var btnA = $("body a");
 
     btnA.click(function (e) {
         e.preventDefault();
-    });
+    });*/
+    
 
 });
