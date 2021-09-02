@@ -162,6 +162,8 @@ body,html {width:100%; font-family: 'GmarketSansLight'; color:#333; overflow-x:h
 
 @media screen and (max-width:500px) {
     
+    .support_box .support_wrap .support_content i {font-size:48px; }
+    
     .ikea_video {height:250px;}
     
     .support_box .support_wrap .support_content p {font-size:0.45em;}
