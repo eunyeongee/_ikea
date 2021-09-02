@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
-    var btnA = $("body a");
+    /*var btnA = $("body a");
 
     btnA.click(function (e) {
         e.preventDefault();
-    });
+    });*/
 
 
     var headermenu = $('#nav > .nav_wrap > .menu'); //header 메뉴 
@@ -48,7 +48,7 @@ $(document).ready(function () {
 
     //search박스 나타나기
     searchBtn.click(function (e) {
-        e.preventDefault()
+        e.preventDefault();
         searchtab.animate({
             top: 80 + 'px'
         }, 500)
@@ -58,7 +58,7 @@ $(document).ready(function () {
 
     //seach박스 닫기
     searchClose.click(function (e) {
-        e.preventDefault()
+        e.preventDefault();
         searchtab.animate({
             top: -335 + 'px'
         }, 500)
@@ -79,7 +79,8 @@ $(document).ready(function () {
 
     var allMask = $('#all_layer_bg'); //전체 레이어 마스크
 
-    loginBtn.click(function () {
+    loginBtn.click(function (e) {
+        e.preventDefault();
 
         allMask.fadeIn(300);
         loginBox.addClass('pop');
@@ -87,8 +88,9 @@ $(document).ready(function () {
 
     });
 
-    loginClose.click(function () {
-
+    loginClose.click(function (e) {
+        e.preventDefault();
+        
         allMask.fadeOut(300);
         loginBox.removeClass('pop');
 
@@ -102,7 +104,8 @@ $(document).ready(function () {
     var pw = $('#pw');
     var btn = $('#login_btn');
 
-    btn.click(function () {
+    btn.click(function (e) {
+        e.preventDefault();
 
         if (id.val() == "") {
             id.next('label').addClass('warning');
@@ -127,13 +130,15 @@ $(document).ready(function () {
     var menuBox = $('#m_nav');
     var menuClose = $('#m_menu_close_btn');
     
-    menuBtn.click(function(){
+    menuBtn.click(function(e){
+        e.preventDefault();
         
         menuBox.animate({left:0},500);
         
     });
     
-    menuClose.click(function(){
+    menuClose.click(function(e){
+        e.preventDefault();
         
         menuBox.animate({left:'-'+100+'%'},500);
         
