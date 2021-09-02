@@ -36,4 +36,4 @@ img{width:100%;}
 .none { display:none;}
 
 
-body,html {width:100%; font-family: 'GmarketSansLight';}
+body,html {width:100%; font-family: 'GmarketSansLight'; overflow-x:hidden;}
