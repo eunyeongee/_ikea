@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+*{margin:0; padding:0; box-sizing: border-box; color:#333; }
+
+a{display: block; text-decoration: none; color:#333;}
+li{list-style: none;}
+img{width:100%;}
+
+.clear_both:after {content:""; display:block; clear:both; }
+.none { display:none;}
+
+
+body,html {width:100%; font-family: 'GmarketSansLight'; color:#333;}
+
+#headers {position:relative;}
+
+/*#category_body*/
+#category_body {width:70%; min-width:1300px; padding-top:80px; margin:0 auto; }
+
+/*.category_filter*/
+.category_filter {position:fixed; top:80px; left:0; width:100%; height:50px; background:#fff; box-shadow: 0 3px 5px #ddd; z-index: 8;}
+
+.category_filter .category_filter_box {width:70%; min-width:1300px; height:100%; display:flex; align-content: center; justify-content: left; flex:auto; margin:0 auto;}
+
+.category_filter_box .c_filter_list { font-size:0.8em; font-family: 'GmarketSansMedium'; color:#9d9d9d; position: relative; line-height: 1; padding-right: 30px;}
+
+.category_filter_box .c_filter_list a { color:#9d9d9d; padding:0 5px; line-height: 50px;}
+
+.category_filter_box .c_filter_list:after { font-family: xeicon; content:"\e93e"; position: absolute; right: 10px; top: 18px;}
+
+.category_filter_box .c_filter_list:last-child{padding-right: 0; }
+
+.category_filter_box .c_filter_list:last-child:after{content:""; }
+
+/*//.category_filter*/
+
+/*.category_box*/
+
+.category_box { margin-top:100px; width:100%; }
+
+.category_box * {font-size:1.05em;}
+
+.ikeastory_bg_img { width:100%; height:360px; background-image: url(../images/ikea_story.jpg); background-repeat: no-repeat; background-size:100% 100%; background-attachment: fixed; }
+
+.consumer_bg_img { width:100%; height:360px; background-image: url(../images/consumer_support.jpg); background-repeat: no-repeat; background-size:100% 100%; background-attachment: fixed; }
+
+.category_box .story_tit { font-size:2.5em; font-family: 'GmarketSansBold'; margin-top: 40px;  margin-left:10px; color:#fbd225; }
+
+.category_box .txt_wrap {display: flex; justify-content:space-between; margin-top:20px; }
+
+.category_box .txt_wrap .story_txt {width: 35%; }
+
+.category_box .story_txt .story_content { margin-top:10px; color:#9d9d9d; }
+
+/*philosophy_box*/
+
+.category_box .txt_wrap .product_philosophy {width: 57%; }
+
+.category_box .txt_wrap .product_philosophy .philosophy_box { width:100%; margin-top:60px; }
+
+.philosophy_box .philosophy_wrap {width:100%; display:flex; }
+
+.philosophy_box .philosophy_wrap .philosophy_content {flex-grow: 1; text-align: center;}
+
+.philosophy_box .philosophy_wrap .philosophy_content i {font-size:150px; }
+
+.philosophy_box .philosophy_wrap .philosophy_content p { font-family: 'GmarketSansMedium'; margin-top:20px; font-size:1.05em; }
+
+/*//philosophy_box*/
+
+
+/*support_box*/
+
+.category_box .txt_wrap .product_support {width: 57%; }
+
+.category_box .txt_wrap .product_support .support_box { width:100%; margin-top:60px; }
+
+.support_box .support_wrap {width:100%; display:flex; }
+
+.support_box .support_wrap .support_content { padding:10px; flex-grow: 1; text-align: center; transition: .35s;}
+
+.support_box .support_wrap .support_content:hover { background:#d9d9d9; }
+
+.support_box .support_wrap .support_content i {font-size:60px; }
+
+.support_box .support_wrap .support_content p { font-family: 'GmarketSansMedium'; margin-top:20px; font-size:0.8em; }
+
+/*support_box*/
+
+.category_box .ikea_video { margin-top: 40px; }
+
+.go_link_box { margin-top:40px;}
+
+.go_link_box .link_wrap { display:flex; align-content: center; justify-content: space-between;}
+
+.go_link_box .link_wrap .link_content {width:31%;}
+
+.go_link_box .link_wrap .link_content .comtent_txt { margin-left:5px; margin-top:10px;}
+
+.ikea_video {height:600px;}
+
+
+@media screen and (max-width:1350px) {
+    
+    #category_body { width:100%; min-width: inherit; padding:0 20px; margin-top:150px; }
+    
+    .ikeastory_bg_img {display:none;}
+    
+    .consumer_bg_img {display:none;}
+    
+    .category_box .story_tit {font-size:2em;}
+    
+    .category_box {flex-direction: column; }
+    
+    .category_filter {width:100%; position:absolute; top:-70px; }
+    
+    .category_filter .category_filter_box {width:100% !important; padding:0 20px; min-width: inherit;} 
+    
+    .category_box .txt_wrap {width:100%; flex-direction: column;}
+    
+    .category_box .txt_wrap .story_txt {width:100%;}
+    
+    .category_box .txt_wrap .product_philosophy {width:100%; margin-top:30px;}
+    
+    .category_box .txt_wrap .product_support {width:100%; margin-top:30px;}
+    
+    .philosophy_box .philosophy_wrap .philosophy_content i {font-size:90px;}
+    
+    .go_link_box .link_wrap {width:100%; flex-direction: column;}
+    
+    .go_link_box .link_wrap .link_content {width:100%;padding-top:20px;}
+    
+    
+}
+
+@media screen and (max-width:500px) {
+    
+    .ikea_video {height:250px;}
+    
+    .support_box .support_wrap .support_content p {font-size:0.45em;}
+}
