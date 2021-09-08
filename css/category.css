@@ -132,7 +132,7 @@ display:none; }
     
     .category_box {flex-direction: column; }
     
-    .category_filter {width:100%; position:absolute; top:-70px; }
+    .category_filter {width:100%; position:absolute; top: 60px; }
     
     .category_filter .category_filter_box {width:100% !important; padding:0 20px; min-width: inherit;}
     

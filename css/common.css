@@ -218,7 +218,7 @@ body,html {position:relative ; font-family: 'GmarketSansLight'; color:#333; over
     .contents_txt {margin-top:20px;}
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     
 
     
@@ -230,21 +230,56 @@ body,html {position:relative ; font-family: 'GmarketSansLight'; color:#333; over
     
     .sec { margin-top:50px; }
     
-    .sec .container .sec_tit { font-size:1.35em; }
+    .sec .container .sec_tit { font-size:1.5em; }
     
     .filter {margin-top:30px;}
     
     .filter .filter_wrap .filter_btn {white-space: nowrap; margin:0 3px; }
     
-    .filter .filter_wrap .filter_btn a { font-size:0.6em;  padding:0 10px; height:30px; line-height:30px;}
+    .filter .filter_wrap .filter_btn a { padding:0 10px; height:30px; line-height:30px;}
     
     .filter .filter_tab .tab_inner { grid-template-columns: 1fr 1fr; }
     
-    .tab_inner .item .txt_wrap {font-size:0.6em}
+    .tab_inner .item .txt_wrap {font-size:0.8em}
     
     .filter_tab .tab_btn {width:100%; margin-top:30px;}    
     
-    .contents_txt {margin-top:30px; font-size:0.7em;}
+    .contents_txt {margin-top:30px; font-size:0.8em;}
+    
+    .idea_txt .content { font-size:0.8em; }
+
+}
+
+
+@media screen and (max-width:390px) {
+    
+
+    
+    .slider .txt_wrap .write {margin-top:30px;}
+    
+    .slider .txt_wrap .write p {font-size:0.9em; line-height: 25px;}
+    
+    .slider .txt_wrap .more_btn {width:100%; margin-top:30px;}
+    
+    .sec { margin-top:50px; }
+    
+    .sec .container .sec_tit { font-size:1.45em; }
+    
+    .filter {margin-top:30px;}
+    
+    .filter .filter_wrap .filter_btn {white-space: nowrap; margin:0 3px; }
+    
+    .filter .filter_wrap .filter_btn a { font-size:0.8em;  padding:0 10px; height:30px; line-height:30px;}
+    
+    .filter .filter_tab .tab_inner { grid-template-columns: 1fr 1fr; }
+    
+    .tab_inner .item .txt_wrap {font-size:0.75em}
+    
+    .filter_tab .tab_btn {width:100%; margin-top:30px;}    
+    
+    .contents_txt {font-size:0.75em;}
+    
+    .idea_txt .content { font-size:0.75em; }
 
 }
 
